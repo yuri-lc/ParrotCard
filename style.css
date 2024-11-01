@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #EEF9BF;
+}
+
+.tituloGame {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  color: #75B79E;
+}
+
+.escondido {
+  display: none;
+}
