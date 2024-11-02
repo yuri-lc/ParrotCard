@@ -1,9 +1,12 @@
 .jogo {
   width: 700px;
   height: 700px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   display: flex;
+  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
+  
 }
 
 .carta {
@@ -11,7 +14,8 @@
   width: 117px;
   height: 146px;
   position: relative;
-  margin-left: 15px;
+  margin-left: 25px;
+  margin: 0 auto;
 }
 
 .card {
@@ -27,6 +31,7 @@
 }
 
 .face {
+  background-color: #A7E9AF;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -36,7 +41,7 @@
 }
 
 .frente-face {
-  transform: rotateY(180deg); 
+  transform: rotateY(180deg);
 }
 
 .verso-face {

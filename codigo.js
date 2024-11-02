@@ -9,7 +9,7 @@ function iniciarJogo() {
   let quantidadeCartas;
 
   do {
-    quantidadeCartas = parseInt(prompt("Com quantas cartas deseja jogar? (4 a 14, apenas números pares)"));
+    quantidadeCartas = parseInt(prompt("Com quantas cartas deseja jogar? (De 4 a 14, apenas números pares)"));
   } while (isNaN(quantidadeCartas) || quantidadeCartas < 4 || quantidadeCartas > 14 || quantidadeCartas % 2 !== 0);
 
   gerarCartas(quantidadeCartas);
