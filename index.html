@@ -9,41 +9,23 @@
   <title>Jogo da Memoria</title>
 </head>
 <body>
-  <!-- titulo do jogo -->
+  <!-- título do jogo -->
   <div class="tituloGame">
     <p>PARROT CARD GAME</p>
   </div>
-  <!-- titulo do jogo -->
-
-<!-- pagina da vitoria -->
-  <div class="vitoria, escondido">
-    <div id="conteiner-vitoria">
-      <h1>Parabéns, você venceu!</h1>
-      <p>Você conseguiu virar todas as cartas!</p>
-      <a href="index.html">Jogar novamente</a>
-    </div>
-  </div>
-  <!-- pagina da vitoria  -->
+  <!-- título do jogo -->
 
   <!-- jogo -->
   <div class="jogo">
-    <div class="grid">
-     <div class="card" id="papagaio">
-      <img class="face frente" src="projeto__parrots__imagens/assets/bobrossparrot.gif" alt="carta" />
-      <img class="face verso" src="projeto__parrots__imagens/assets/back.png" alt="carta" />
-     </div>
-    </div>
-
-    <div class="grid">
-      <div class="card" id="papagaio">
-       <img class="face frente" src="projeto__parrots__imagens/assets/bobrossparrot.gif" alt="carta" />
-       <img class="face verso" src="projeto__parrots__imagens/assets/back.png" alt="carta" />
+    <div class="carta">
+      <div class="card" onclick="virar(this)">
+        <img class="face frente-face" src="projeto__parrots__imagens/assets/bobrossparrot.gif" alt="Frente da Carta">
+        <img class="face verso-face" src="projeto__parrots__imagens/assets/back.png" alt="Verso da Carta">
       </div>
     </div>
   </div>
   <!-- jogo -->
 
-
-    <script src="codigo.js"></script>
+  <script src="codigo.js"></script>
 </body>
 </html>
