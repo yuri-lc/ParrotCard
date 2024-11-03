@@ -1,21 +1,19 @@
 .jogo {
-  width: 700px;
-  height: 700px;
-  /* margin: 0 auto; */
+  width: 100%;
+  max-width: 872px;
   display: flex;
-  align-items: center;
-  align-items: baseline;
   flex-wrap: wrap;
-  
+  justify-content: center;
+  gap: 34px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 .carta {
-  perspective: 1000px; 
+  perspective: 1000px;
   width: 117px;
   height: 146px;
   position: relative;
-  margin-left: 25px;
-  margin: 0 auto;
 }
 
 .card {
@@ -24,10 +22,7 @@
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
-}
-
-.card.virada {
-  transform: rotateY(180deg); 
+  cursor: pointer;
 }
 
 .face {
@@ -38,6 +33,15 @@
   backface-visibility: hidden;
   border-radius: 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.face img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 
 .frente-face {
@@ -45,8 +49,41 @@
 }
 
 .verso-face {
-  transform: rotateY(0deg); 
+  transform: rotateY(0deg);
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .tituloGame {
+      font-size: 44px;
+      line-height: 52px;
+  }
+}
+
+@media (max-width: 335px) {
+  .tituloGame {
+      font-size: 36px;
+      line-height: 42px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      text-align: center; 
+  }
+
+  .jogo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 0 15px; 
+  }
+
+  .carta {
+      width: 80%; 
+      margin: 0 auto 14px auto; 
+      max-width: 200px; 
+  }
+}
+
 
 
 
