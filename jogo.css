@@ -25,6 +25,10 @@
   cursor: pointer;
 }
 
+.card.virada {
+  transform: rotateY(180deg);
+}
+
 .face {
   background-color: #A7E9AF;
   position: absolute;
